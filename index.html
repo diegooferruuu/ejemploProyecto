@@ -1,6 +1,16 @@
 <html>
   <body>
-    <h1>Sumador</h1>
+    <h1>Totalizador</h1>
+    <form id="totalizador-form">
+      <label for="cantidad_item">Cantidad de item:</label>
+      <input type="number" id="primer_campo">
+      <input type="submit" value="Totalizar" id="totalizar-button">
+    </form>
+    
+    <div id="resultado-div"></div>
+    <script type="module" src="./src/presenter.js"></script>
+    
+    <!-- 
     <form id="sumar-form">
       <label for="primer-numero">Primer número:</label>
       <input type="number" id="primer-numero" />
@@ -10,6 +20,6 @@
     </form>
     <div id="resultado-div"></div>
 
-    <script type="module" src="./src/presenter.js"></script>
+    <script type="module" src="./src/presenter.js"></script> -->
   </body>
 </html>
