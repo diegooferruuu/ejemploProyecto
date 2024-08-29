@@ -1,10 +1,13 @@
-import { totalizador } from "./totalizador";
+import { totalizador, precioItem, estado } from "./totalizador";
 
 describe("Totalizador", () => {
     it("Deberia mostrar 20 items", () => {
-        expect(totalizador(20, 0)).toEqual([20, 0]);
+        expect(totalizador(20)).toEqual(20);
     });
     it("Deberia mostrar 20 items y 10 de precio", () => {
-        expect(totalizador(20, 10)).toEqual([20, 10]);
+        expect(precioItem(3)).toEqual(3);
+    });
+    it("Deberia mostrar el estado ", () => {
+        expect(estado("UT")).toEqual("UT");
     });
 });
